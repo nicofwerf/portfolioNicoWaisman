@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Public Sans;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  /* Home */
+  
+  header{ 
+   justify-content: space-between;
+  }
+  
+  
+  h1{
+    font-size: 2.5em;
+  }
+  
+  h2{
+    font-size: 2em;
+  }
+  
+  h3{
+    font-size: 1em;
+  }
+  
+  footer{
+    height: 5em;
+  }
+  
+  .sobre_mi{
+  height: 72vh;  
+  }
+  
+  .contenedor{
+    background-image: url("images/fondo-principal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+  }
+  
+  
+  .grilla{
+    width: 80%;
+    margin: 10% 0 5% 0;
+  }
+  
+  .general_padding{
+    padding: 3%;
+  }
+  
+  .general_margin{
+    margin: 4%;
+  }
+  
+  
+  .fondo_blanco{
+    background-color: white;
+  }
+  
+  .fondo_azul{
+   background-color: #0B2232;  
+  }
+  
+  .texto_azul{
+    color:#0B2232;
+  }
+  
+  .flex{
+    display: flex;
+  }
+  
+  .centrar{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+  }
+  
+  .column{
+    flex-direction: column;
+  }
+  
+  .invisible{
+    display:none;
+  }
+  
+  
+  .svg_info{
+    width: 15%;
+  }
+  
+  .article_info{
+    margin: 3% 0;
+    border-radius: 0.3em;
+  }
+  
+  .habilidades{
+    background-image: url("images/fondo-secundario.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+  }
+  
+  .article_habilidad{
+    height: 30%;
+    border-radius: 0.5em;
+  }
+  
+  .logo_proyecto{
+    width: 100%;
+  }
+  
+  .article_proyecto, .article_estudio_experiencias, .article_apps, .article_pagina_proyecto {
+    border-radius: 0.3em;
+  }
+  
+  .inputs_form{
+    width: 60%;
+    margin: 2% 0 2% 0;
+  }
+  
+  .btn_enviar{
+    padding: 2% 4%;
+    border-radius: 0.3em;
+  }
+  
+  .logos_footer{
+    width: 100%;
+  }
+  
+  .ejemplos{
+    flex-wrap: wrap;
+  }
+  
+  .links_footer{
+    margin: 0 1%;
+    width: 10%;
+  }
+  
+  .ejemplos h2{
+    width: 100%;
+  }
+  
+  
+  .article_ejemplos{
+    height: 5em;
+    border-radius: 0.3em;
+    margin: 2% 1%;
+  }
+  
+  #logo{
+    width: 10%;
+    margin: 0.2% 0% 0% 1%;  
+  }
+  
+  #btn_contactame{
+    background-color: white;
+    color: #0B2232;;
+    padding: 1% 3%;
+    font-size: 1.3em;
+    border-radius: 0.3em;
+    margin: 1% 0;
+  }
+  
+  #habilidad1{
+    background-image: url("images/uxui.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #habilidad2{
+    background-image: url("images/3d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #habilidad3{
+    background-image: url("images/video.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #menu_hamburguesa{
+    display: block;
+    height: 80%;
+  }
+  
+  
+  
+  /* Página Sobre mi */
+  
+  .contenedor_presentacion{
+    background-image: url("images/fondo_principal_presentacion.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  /* Página Habilidades */
+  
+  .contenedor_habilidades{
+    background-image: url("images/fondo_habilidades.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  
+  /* Página  Proyectos */
+  
+  .contenedor_proyectos{
+    background-image: url("images/fondo_proyectos.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .logo_pagina_proyecto{
+    width: 100%;
+  }
+  
+  .info_agregada_proyectos{
+    display: none;
+  }
+  
+  
+  /* Página Contacto */
+  
+  .contenedor_contacto{
+    background-image: url("images/fondo_contacto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  
+  
+  @media (min-width: 1280px){
+  
+  
+    /* Home */
+  
+    header{
+      height: 5em;  
+    }
+    
+    nav{
+      width: 60%;  
+    }
+    
+    li{
+      font-size: 1.5em;
+      margin: 0 3% 0 1%;
+    }
+  
+    h1{
+      font-size: 3em;
+    }
+  
+    h3{
+      font-size: 1.5em;
+    }
+    
+    .invisible{
+      display: flex;
+    }
+  
+    .column{
+      flex-direction: row;
+    }
+    
+    .sobre_mi{
+      flex-direction: column;
+    }
+  
+    .grilla{
+      width: 30%;
+    }
+  
+    .menu_hamburguesa{
+      display: none;
+    }
+  
+    .info{
+      justify-content: space-evenly;  
+    }
+    
+    .article_info{
+      width: 100%;
+      height: 25%;
+      margin: 2% 0;
+    }
+  
+    .lista_info{
+      flex-direction: column;
+      width: 40%;
+    }
+    
+    .underline_animation {
+      display: inline-block;
+      position: relative;
+      transition: 0.2s;
+    }
+  
+    .underline_animation::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 3%;
+      background-color: white;
+      transition: width 0.2s ease-in-out;
+    }
+  
+    .underline_animation:hover::after {
+      width: 100%;
+    }
+  
+    .svg_info{
+      width: 8%;
+    }
+  
+    .article_habilidad{
+      width: 25%;
+      height: 100%;
+      margin: 0 2%;
+    }
+  
+    .habilidades{
+      padding: 3% 0;
+    }
+  
+    .article_proyecto{
+      width: 25%;
+      margin: 0 2%;
+    }
+  
+    .contacto{
+      flex-direction: column;
+    }
+  
+    .inputs_form{
+      width: 40%;
+      height: 3em;
+      color: black;
+    }
+  
+    .btn_enviar{
+      padding: 1% 2%;
+      border-radius: 0.3em;
+      font-size: 1.5em;
+    }
+  
+    .btn_enviar:hover{
+      background-color: #0B2232; 
+      color: white;
+      transition: 0.2s;
+    }
+  
+    .texto_habilidades{
+      font-size: 4em;
+    }
+  
+    .hover-scale {
+      transition: 0.2s;
+    }
+  
+    .hover-scale:hover {
+      transform: scale(1.02);
+    }
+  
+    .links_footer{
+      width: 20%;
+    }
+  
+    .article_ejemplos{
+      width: 24%;
+      margin: 0 1.5%;
+    }
+  
+    #texto_info{
+      font-size: 3em;
+    }
+  
+    #perfil{
+      margin: 5% 0;
+    }
+  
+    #btn_contactame{
+      padding: 0.5% 1.5%;
+    }
+  
+    #btn_contactame:hover{
+      background-color: #0B2232; 
+      color: white;
+      transition: 0.2s;
+    }
+  
+    #menu_hamburguesa{
+      display: none;
+    }
+  
+    /* Página Sobre Mi */
+  
+    .trabajos, .estudios{
+      height: 33em;
+      width: 100%;
+    }
+  
+    .article_estudio_experiencias{
+      height: 100%;
+      width: 20%;
+      margin: 2%;
+    }
+  
+    .experiencia{
+      flex-direction: column;
+    }
+  
+    /* Página Habilidades */
+    
+    .apps{
+      flex-wrap: wrap;
+    }
+  
+    .article_apps{
+      width: 20%;
+      margin: 2%;
+      height: 100%;
+    }
+  
+    /* Página Proyectos */
+  
+    .article_pagina_proyecto{
+      display: flex;
+      width: 80%;
+      margin: 2% 0;
+    }
+  
+    .logo_pagina_proyecto{
+      width: 40%;
+    }
+  
+    .texto_pagina_proyecto{
+      width: 60%;
+    }
+  
+    .info_agregada_proyectos{
+      display: block;
+    }
+  
+    #pagina_proyectos{
+      flex-wrap: wrap;
+    }
+    
+    
+  }
+  
+  
+  
+  
+  
